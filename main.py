@@ -16,7 +16,7 @@ def fill_examples():
 
 
 def do_learn_and_pred():
-  fill_examples();
+  fill_examples()
   predictor = LinearRegression(n_jobs=-1).fit(TRAIN_INPUT, TRAIN_OUTPUT) 
   #create logistic_regression and fit it  
 
@@ -26,7 +26,7 @@ def do_learn_and_pred():
   #coefficients = predictor.coef_
 
   print(outcome)
-  print("===============================");
+  print("===============================")
   print(score)
 
 do_learn_and_pred()
